@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Management</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        #header {
+            height: 8rem;
+            
+        }
+        #ontop {
+            height: 1rem;
+            background-image: url(./assests/img/shape_horizontal.svg);
+        }
+        #logoHeader {
+            height: 3rem;
+            margin: 8px 8px;
+            background-image: url(/assests/img/Vietnamese-165px.jpg);
+            background-repeat: no-repeat;
+        }
+
+        #formInput {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 8px 0;
+        }
+        #formInput #inputName {
+            height: 40px;
+            width: 400px;
+        }
+
+        #formInput #btnNew {
+            height: 40px;
+            width: 60px;
+        }
+        #content {
+            text-align: center;
+        }
+        #list-task .task-name{
+            display: inline-block;
+        }
+        #list-task li {
+            margin: 16px 0;
+        }
+
+        #list-task li a {
+            text-decoration: none;
+        }
+        #list-task li {
+            background-color: antiquewhite;
+        }
+        #footer {
+            height: 8rem;
+            
+        }
+        #onbot {
+            height: 1rem;
+            background-image: url(./assests/img/shape_horizontal.svg);
+        }
+    </style>
+    
+</head>
+<body>
+    <div id="header">
+        <div id="ontop"></div>
+        <div id="logoHeader"></div>
+    </div>
+    <div id="content">
+        <div id="formInput">
+            <form action="#">
+                <input type="text" id="inputName" placeholder="Input info">
+                <input type="submit" id="btnNew" style="height: 40px;
+                width: 60px">
+            </form>
+                
+        </div>
+        
+        
+        <div id="list-task">
+            <h4>Danh sách task</h4>
+            <div id="result">
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <!-- <div id="onbot"></div> -->
+    </div>
+    <script src="/js/task.js"></script>
+</body>
+</html>
